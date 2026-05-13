@@ -303,6 +303,14 @@ section:nth-child(even) { background: var(--ivory2); }
   color: rgba(26,10,15,.55);
 }
 
+.featured-badge {
+  position: absolute; top: 24px; right: 24px;
+  padding: 5px 14px;
+  background: var(--bordeaux);
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--ivory); font-weight: 600;
+}
+
 .featured-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 24px;
 }
@@ -519,6 +527,7 @@ footer {
   .project-desc { font-size: 14px; }
   .result-item { font-size: 13px; }
   .featured-grid { grid-template-columns: 1fr; gap: 20px; }
+  .featured-badge { position: static; display: inline-block; margin-bottom: 12px; }
 
   /* Compétences */
   .skills-grid { grid-template-columns: 1fr; gap: 12px; }
@@ -644,23 +653,21 @@ footer {
   <div class="hero-bg-line"></div>
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-label" data-fr="Ingénieure · Cheffe de Projet · Innovatrice" data-en="Engineer · Project Manager · Innovator">
-      Ingénieure · Cheffe de Projet · Innovatrice
+    <div class="hero-label" data-fr="Ingénieure · Chef de projet · Product mindset" data-en="Engineer · Project Manager · Product mindset">
+      Ingénieure · Chef de projet · Product mindset
     </div>
     <h1 class="hero-name">Khady Sarah<br><span>SALL</span></h1>
-    <p class="hero-title" data-fr="Ingénieure Bac+5 · IPSA Paris · Certifiée AgilePM & SFC" data-en="Bac+5 Engineer · IPSA Paris · AgilePM & SFC Certified">
-      Ingénieure Bac+5 · IPSA Paris · Certifiée AgilePM & SFC
+    <p class="hero-title" data-fr="Ingénieure Bac+5 · Jeune diplômée IPSA 2025 · Certifiée AgilePM & SFC" data-en="Bac+5 Engineer · 2025 IPSA graduate · AgilePM & SFC Certified">
+      Ingénieure Bac+5 · Jeune diplômée IPSA 2025 · Certifiée AgilePM & SFC
     </p>
-    <p class="hero-tagline" data-fr="Formée aux structures et aux fluides, j'ai rapidement orienté mon parcours vers la structuration de projets. Là où se rencontrent exigence technique et management, je prends le lead : je pilote, je coordonne, je livre." data-en="I started with structures and fluids. I chose to structure projects. At the crossroads of technical expertise and management, I drive, coordinate, and deliver.">
-      Formée aux structures et aux fluides, j'ai rapidement orienté mon parcours vers la structuration de projets. Là où se rencontrent exigence technique et management, je prends le lead : je pilote, je coordonne, je livre.
+    <p class="hero-tagline" data-fr="Formée aux structures et aux fluides, j'ai choisi de structurer des projets. À l'intersection de l'ingénierie, du pilotage agile et du produit digital, je fais dialoguer le métier et la tech — pour livrer." data-en="Trained in structures and fluids, I chose to structure projects instead. At the intersection of engineering, agile delivery and digital product, I bridge business and tech — to ship.">
+      Formée aux structures et aux fluides, j'ai choisi de structurer des projets. À l'intersection de l'ingénierie, du pilotage agile et du produit digital, je fais dialoguer le métier et la tech — pour livrer.
     </p>
     <div class="hero-tags">
       <span class="hero-tag">PMO</span>
-      <span class="hero-tag">Chef de Projet</span>
+      <span class="hero-tag" data-fr="Chef de projet" data-en="Project Manager">Chef de projet</span>
       <span class="hero-tag">Business Analyst</span>
-      <span class="hero-tag">Agile · Scrum</span>
-      <span class="hero-tag">IA & Automatisation</span>
-      <span class="hero-tag">Product Management</span>
+      <span class="hero-tag">Product mindset</span>
     </div>
     <div class="hero-actions">
       <a href="#projects" class="btn-primary" data-fr="Voir mes projets" data-en="View my projects">Voir mes projets</a>
@@ -682,20 +689,17 @@ footer {
     </h2>
     <div class="about-grid">
       <div class="about-text">
-        <p data-fr="Ingénieure aéronautique de formation (IPSA, 2025), j'ai très tôt compris que ma vraie force n'était pas uniquement dans le calcul des structures — mais dans ma capacité à <strong>faire avancer les équipes vers un objectif commun</strong>." data-en="Trained as an aeronautical engineer (IPSA, 2025), I quickly understood that my real strength was not just in structural calculations — but in my ability to <strong>drive teams toward a shared goal</strong>.">
-          Ingénieure aéronautique de formation (IPSA, 2025), j'ai très tôt compris que ma vraie force n'était pas uniquement dans le calcul des structures — mais dans ma capacité à <strong>faire avancer les équipes vers un objectif commun</strong>.
+        <p data-fr="Ingénieure aéronautique de formation (<strong>IPSA, 2025</strong>), j'ai très tôt compris que ma vraie force n'était pas uniquement dans le calcul des structures — mais dans ma capacité à <strong>faire avancer les équipes vers un objectif commun</strong>." data-en="Trained as an aeronautical engineer (<strong>IPSA, 2025</strong>), I quickly understood that my real strength was not just in structural calculations — but in my ability to <strong>drive teams toward a shared goal</strong>.">
+          Ingénieure aéronautique de formation (<strong>IPSA, 2025</strong>), j'ai très tôt compris que ma vraie force n'était pas uniquement dans le calcul des structures — mais dans ma capacité à <strong>faire avancer les équipes vers un objectif commun</strong>.
         </p>
-        <p data-fr="Le déclic est arrivé à Istanbul, lors de la conception d'un satellite miniature avec une équipe de 7 personnes. Puis BASSETTI Group m'a mis face aux vrais enjeux industriels : 7 clients grands comptes, des projets agiles, des COPILs, des livrables réels." data-en="The turning point came in Istanbul, designing a miniature satellite with a 7-person team. Then BASSETTI Group exposed me to real industrial challenges: 7 major clients, agile projects, steering committees, real deliverables.">
-          Le déclic est arrivé à Istanbul, lors de la conception d'un satellite miniature avec une équipe de 7 personnes. Puis BASSETTI Group m'a mis face aux vrais enjeux industriels : 7 clients grands comptes, des projets agiles, des COPILs, des livrables réels.
+        <p data-fr="Le déclic est arrivé à Istanbul, en coordonnant la conception d'un satellite miniature avec une équipe de 7 personnes. Puis <strong>BASSETTI Group</strong> m'a mise face aux vrais enjeux industriels : 7 clients grands comptes (EDF, SNCF, Vallourec…), des projets agiles, des COPILs, des livrables réels — et l'apprentissage du pilotage bout en bout." data-en="The turning point came in Istanbul, coordinating the design of a miniature satellite with a 7-person team. Then <strong>BASSETTI Group</strong> exposed me to real industrial stakes: 7 major clients (EDF, SNCF, Vallourec…), agile projects, steering committees, real deliverables — and end-to-end project ownership.">
+          Le déclic est arrivé à Istanbul, en coordonnant la conception d'un satellite miniature avec une équipe de 7 personnes. Puis <strong>BASSETTI Group</strong> m'a mise face aux vrais enjeux industriels : 7 clients grands comptes (EDF, SNCF, Vallourec…), des projets agiles, des COPILs, des livrables réels — et l'apprentissage du pilotage bout en bout.
         </p>
-        <p data-fr="Je ne suis ni pure technicienne, ni pure manager. <strong>Je suis les deux</strong> — et c'est ce qui fait la différence." data-en="I am neither a pure technician nor a pure manager. <strong>I am both</strong> — and that is precisely what creates value.">
-          Je ne suis ni pure technicienne, ni pure manager. <strong>Je suis les deux</strong> — et c'est ce qui fait la différence.
+        <p data-fr="Je ne suis ni pure technicienne, ni pure manager. <strong>Je suis les deux</strong> — et c'est ce qui fait la différence sur des projets industriels complexes." data-en="I am neither a pure technician nor a pure manager. <strong>I am both</strong> — and that's what makes the difference on complex industrial projects.">
+          Je ne suis ni pure technicienne, ni pure manager. <strong>Je suis les deux</strong> — et c'est ce qui fait la différence sur des projets industriels complexes.
         </p>
-        <p data-fr="Mais l'expérience qui définit aujourd'hui ma manière de penser est <strong>Woodle Career</strong> — un SaaS de gestion de recherche d'emploi que j'ai conçu et piloté en tant que <strong>Product Lead</strong>, de la première idée à la mise en production." data-en="But the experience that defines the way I think today is <strong>Woodle Career</strong> — a job search management SaaS I designed and led as <strong>Product Lead</strong>, from the very first idea to live production.">
-          Mais l'expérience qui définit aujourd'hui ma manière de penser est <strong>Woodle Career</strong> — un SaaS de gestion de recherche d'emploi que j'ai conçu et piloté en tant que <strong>Product Lead</strong>, de la première idée à la mise en production.
-        </p>
-        <p data-fr="J'ai porté l'intégralité du cycle produit : vision et stratégie, architecture des parcours utilisateurs, arbitrages de monétisation freemium, UX writing bilingue et coordination du développement sur 7+ sprints jusqu'au déploiement live sur <a href=&quot;https://career.woodlelab.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>career.woodlelab.com</a>. C'est cette expérience qui façonne aujourd'hui ma manière de penser <strong>création de produits, structuration de services, stratégie, organisation de projets et expérience utilisateur</strong>." data-en="I owned the full product lifecycle: vision and strategy, user journey architecture, freemium monetization trade-offs, bilingual UX writing and development coordination across 7+ sprints through to live deployment at <a href=&quot;https://career.woodlelab.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>career.woodlelab.com</a>. This experience shapes the way I think about <strong>product creation, service structuring, strategy, project organization and user experience</strong> today.">
-          J'ai porté l'intégralité du cycle produit : vision et stratégie, architecture des parcours utilisateurs, arbitrages de monétisation freemium, UX writing bilingue et coordination du développement sur 7+ sprints jusqu'au déploiement live sur <a href="https://career.woodlelab.com" target="_blank" rel="noopener">career.woodlelab.com</a>. C'est cette expérience qui façonne aujourd'hui ma manière de penser <strong>création de produits, structuration de services, stratégie, organisation de projets et expérience utilisateur</strong>.
+        <p data-fr="En parallèle de mon parcours, j'ai piloté un side project livré en production — <strong>Woodle Career</strong>, un SaaS disponible sur <a href=&quot;https://career.woodlelab.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>career.woodlelab.com</a>. Cette expérience m'a appris à parler le langage produit, à comprendre les arbitrages techniques et à dialoguer en continu avec des développeurs. C'est ce qui me distingue d'un profil ingénieur classique : <strong>je structure les projets industriels tout en comprenant les produits digitaux qui les soutiennent</strong>." data-en="Alongside my path, I led a side project shipped to production — <strong>Woodle Career</strong>, a SaaS live at <a href=&quot;https://career.woodlelab.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>career.woodlelab.com</a>. This taught me to speak the product language, understand technical trade-offs and work hand-in-hand with developers. That's what sets me apart from a classic engineering profile: <strong>I structure complex industrial projects while understanding the digital products that support them</strong>.">
+          En parallèle de mon parcours, j'ai piloté un side project livré en production — <strong>Woodle Career</strong>, un SaaS disponible sur <a href="https://career.woodlelab.com" target="_blank" rel="noopener">career.woodlelab.com</a>. Cette expérience m'a appris à parler le langage produit, à comprendre les arbitrages techniques et à dialoguer en continu avec des développeurs. C'est ce qui me distingue d'un profil ingénieur classique : <strong>je structure les projets industriels tout en comprenant les produits digitaux qui les soutiennent</strong>.
         </p>
       </div>
       <div class="about-stats">
@@ -728,81 +732,32 @@ footer {
 
     <div class="projects-grid">
 
-      <!-- WOODLE LAB · Product Lead Woodle Career — FEATURED -->
-      <div class="project-card featured reveal">
-        <div class="project-period" data-fr="Septembre 2025 – Présent" data-en="September 2025 – Present">Septembre 2025 – Présent</div>
-        <div class="project-company">WOODLE Lab</div>
-        <div class="project-role" data-fr="Product Lead — Woodle Career, SaaS de pilotage de recherche d'emploi" data-en="Product Lead — Woodle Career, job search management SaaS">Product Lead — Woodle Career, SaaS de pilotage de recherche d'emploi</div>
-        <div class="project-desc" data-fr="Product Lead sur Woodle Career, l'ATS personnel pour candidats — de la compréhension du besoin utilisateur au déploiement live sur <a href=&quot;https://career.woodlelab.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>career.woodlelab.com</a>. Structuration du produit, décisions produit, communication continue avec les développeurs et compréhension des impacts techniques et architecturaux tout au long du projet." data-en="Product Lead on Woodle Career — the personal ATS for job seekers — from user need discovery to live deployment at <a href=&quot;https://career.woodlelab.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>career.woodlelab.com</a>. Product structuring, product decisions, continuous communication with developers and understanding of technical and architectural impacts throughout the project.">
-          Product Lead sur Woodle Career, l'ATS personnel pour candidats — de la compréhension du besoin utilisateur au déploiement live sur <a href="https://career.woodlelab.com" target="_blank" rel="noopener">career.woodlelab.com</a>. Structuration du produit, décisions produit, communication continue avec les développeurs et compréhension des impacts techniques et architecturaux tout au long du projet.
-        </div>
-        <div class="project-tags" style="margin-bottom:28px;">
-          <span class="project-tag" style="background:rgba(139,26,46,.12);border-color:rgba(139,26,46,.4);color:#5C0F1E;">Woodle Career — Live</span>
-          <span class="project-tag" style="background:rgba(122,94,46,.10);border-color:rgba(122,94,46,.4);color:#5A4520;" data-fr="Stratégie produit" data-en="Product Strategy">Stratégie produit</span>
-          <span class="project-tag" style="background:rgba(31,82,110,.10);border-color:rgba(31,82,110,.4);color:#1F4F6E;" data-fr="Conception UX" data-en="UX Design">Conception UX</span>
-          <span class="project-tag" style="background:rgba(139,26,46,.08);border-color:rgba(139,26,46,.30);color:#8B1A2E;">SaaS Freemium</span>
-        </div>
-        <div class="featured-grid">
-          <div class="featured-col">
-            <h4 data-fr="Compréhension du besoin &amp; décisions produit" data-en="User need &amp; product decisions">Compréhension du besoin &amp; décisions produit</h4>
-            <div class="project-results">
-              <div class="result-item" data-fr="Compréhension du besoin utilisateur &amp; structuration du produit autour du positionnement « ATS personnel pour candidats »" data-en="User need discovery &amp; product structuring around the positioning 'personal ATS for job seekers'">Compréhension du besoin utilisateur &amp; structuration du produit autour du positionnement « ATS personnel pour candidats »</div>
-              <div class="result-item" data-fr="Définition du modèle freemium (Free / Pro 4,99 €/mois, essai 14 j sans CB) et des arbitrages Free vs Pro — valeur perçue, rétention, conversion" data-en="Defined the freemium model (Free / Pro €4.99/month, 14-day no-CC trial) and Free vs Pro trade-offs — perceived value, retention, conversion">Définition du modèle freemium (Free / Pro 4,99 €/mois, essai 14 j sans CB) et des arbitrages Free vs Pro — valeur perçue, rétention, conversion</div>
-              <div class="result-item" data-fr="Roadmap multi-sprints, priorisation continue des fonctionnalités &amp; validation fonctionnelle des livrables" data-en="Multi-sprint roadmap, continuous feature prioritization &amp; functional validation of deliverables">Roadmap multi-sprints, priorisation continue des fonctionnalités &amp; validation fonctionnelle des livrables</div>
-              <div class="result-item" data-fr="Conception UX et UX writing bilingue FR/EN : parcours utilisateurs, microcopy contextuelle, onboarding guidé, communication in-app &amp; emails" data-en="UX design and bilingual FR/EN UX writing: user journeys, contextual microcopy, guided onboarding, in-app communication &amp; emails">Conception UX et UX writing bilingue FR/EN : parcours utilisateurs, microcopy contextuelle, onboarding guidé, communication in-app &amp; emails</div>
-            </div>
-          </div>
-          <div class="featured-col">
-            <h4 data-fr="Coordination, gestion &amp; livraison" data-en="Coordination, management &amp; delivery">Coordination, gestion &amp; livraison</h4>
-            <div class="project-results">
-              <div class="result-item" data-fr="Communication continue avec les développeurs : animation des sprints, retours fonctionnels précis, suivi des livrables" data-en="Continuous communication with developers: sprint facilitation, precise functional feedback, deliverable follow-up">Communication continue avec les développeurs : animation des sprints, retours fonctionnels précis, suivi des livrables</div>
-              <div class="result-item" data-fr="Compréhension des impacts techniques et de l'architecture (authentification, paiement, emails transactionnels, jobs planifiés) pour décider en connaissance de cause" data-en="Understanding of technical and architectural impacts (auth, payment, transactional emails, scheduled jobs) to make informed decisions">Compréhension des impacts techniques et de l'architecture (authentification, paiement, emails transactionnels, jobs planifiés) pour décider en connaissance de cause</div>
-              <div class="result-item" data-fr="Pilotage de 7+ sprints en livraison continue, jusqu'au déploiement live sur career.woodlelab.com" data-en="Led 7+ continuous-delivery sprints, through to live deployment at career.woodlelab.com">Pilotage de 7+ sprints en livraison continue, jusqu'au déploiement live sur career.woodlelab.com</div>
-              <div class="result-item" data-fr="20+ fonctionnalités opérationnelles : Kanban 11 statuts, Daily Brief, rappels &amp; relances automatisés, dashboard KPI personnalisable, agrégateur d'offres Jooble · Adzuna · France Travail" data-en="20+ live features: 11-status Kanban, Daily Brief, automated reminders &amp; follow-ups, customizable KPI dashboard, job aggregator Jooble · Adzuna · France Travail">20+ fonctionnalités opérationnelles : Kanban 11 statuts, Daily Brief, rappels &amp; relances automatisés, dashboard KPI personnalisable, agrégateur d'offres Jooble · Adzuna · France Travail</div>
-            </div>
-          </div>
-        </div>
-        <div class="project-tags" style="margin-top:16px;">
-          <span class="project-tag">Product Management</span>
-          <span class="project-tag" data-fr="Stratégie produit" data-en="Product Strategy">Stratégie produit</span>
-          <span class="project-tag" data-fr="Décisions produit" data-en="Product Decisions">Décisions produit</span>
-          <span class="project-tag" data-fr="Compréhension du besoin" data-en="User Need Discovery">Compréhension du besoin</span>
-          <span class="project-tag" data-fr="Structuration produit" data-en="Product Structuring">Structuration produit</span>
-          <span class="project-tag" data-fr="Conception UX" data-en="UX Design">Conception UX</span>
-          <span class="project-tag">UX Writing</span>
-          <span class="project-tag" data-fr="Roadmap &amp; sprints" data-en="Roadmap &amp; sprints">Roadmap &amp; sprints</span>
-          <span class="project-tag" data-fr="Coordination développeurs" data-en="Developer Coordination">Coordination développeurs</span>
-          <span class="project-tag">SaaS Freemium</span>
-          <span class="project-tag">FR/EN</span>
-        </div>
-      </div>
-
-      <!-- BASSETTI — FEATURED -->
+      <!-- BASSETTI — FEATURED #1 -->
       <div class="project-card featured reveal">
         <div class="project-period">Février 2025 – Juillet 2025</div>
         <div class="project-company">BASSETTI GROUP</div>
-        <div class="project-role" data-fr="Cheffe de Projet Technique / PMO — Paris" data-en="Technical Project Manager / PMO — Paris">Cheffe de Projet Technique / PMO — Paris</div>
-        <div class="project-desc" data-fr="6 mois au cœur de projets industriels complexes. Pilotage agile, relation client, intégration fonctionnelle et coordination d'équipes sur 7 clients grands comptes." data-en="6 months at the heart of complex industrial projects. Agile management, client relations, functional integration and team coordination across 7 major clients.">
-          6 mois au cœur de projets industriels complexes. Pilotage agile, relation client, intégration fonctionnelle et coordination d'équipes sur 7 clients grands comptes.
+        <div class="project-role" data-fr="Assistante Cheffe de Projet Technique / PMO — Paris" data-en="Assistant Technical Project Manager / PMO — Paris">Assistante Cheffe de Projet Technique / PMO — Paris</div>
+        <div class="project-desc" data-fr="6 mois au cœur de projets industriels complexes. Pilotage agile, relation client en français et en anglais, intégration fonctionnelle et coordination d'équipes développeurs sur 7 clients grands comptes." data-en="6 months at the heart of complex industrial projects. Agile management, bilingual FR/EN client relations, functional integration and developer team coordination across 7 major clients.">
+          6 mois au cœur de projets industriels complexes. Pilotage agile, relation client en français et en anglais, intégration fonctionnelle et coordination d'équipes développeurs sur 7 clients grands comptes.
         </div>
         <div class="project-tags" style="margin-bottom:28px;">
           <span class="project-tag" style="background:rgba(196,116,52,.10);border-color:rgba(196,116,52,.4);color:#8B4A1E;">EDF</span>
           <span class="project-tag" style="background:rgba(31,82,110,.10);border-color:rgba(31,82,110,.4);color:#1F4F6E;">SNCF</span>
           <span class="project-tag" style="background:rgba(122,94,46,.10);border-color:rgba(122,94,46,.4);color:#5A4520;">Vallourec</span>
           <span class="project-tag" style="background:rgba(31,79,46,.10);border-color:rgba(31,79,46,.4);color:#1F4F2E;">Nord Composites</span>
-          <span class="project-tag">Mirion</span>
-          <span class="project-tag">Industeel</span>
-          <span class="project-tag">Clarins</span>
+          <span class="project-tag" style="background:rgba(89,46,110,.10);border-color:rgba(89,46,110,.4);color:#4A1E5C;">Mirion</span>
+          <span class="project-tag" style="background:rgba(70,82,96,.10);border-color:rgba(70,82,96,.4);color:#2E4458;">Industeel</span>
+          <span class="project-tag" style="background:rgba(176,90,110,.10);border-color:rgba(176,90,110,.4);color:#8B3D52;">Clarins</span>
         </div>
         <div class="featured-grid">
           <div class="featured-col">
             <h4 data-fr="Missions clés" data-en="Key missions">Missions clés</h4>
             <div class="project-results">
               <div class="result-item" data-fr="Pilotage Agile Scrum : backlogs, KPIs, COPILs, chiffrage QCD" data-en="Agile Scrum management: backlogs, KPIs, steering committees, QCD costing">Pilotage Agile Scrum : backlogs, KPIs, COPILs, chiffrage QCD</div>
-              <div class="result-item" data-fr="Analyse des besoins métiers, modélisation UML/BPMN" data-en="Business needs analysis, UML/BPMN modeling">Analyse des besoins métiers, modélisation UML/BPMN</div>
-              <div class="result-item" data-fr="Management équipe développeurs &amp; coordination multi-acteurs" data-en="Developer team management &amp; multi-stakeholder coordination">Management équipe développeurs &amp; coordination multi-acteurs</div>
+              <div class="result-item" data-fr="Analyse des besoins métiers, modélisation UML/BPMN, spécifications fonctionnelles" data-en="Business needs analysis, UML/BPMN modeling, functional specifications">Analyse des besoins métiers, modélisation UML/BPMN, spécifications fonctionnelles</div>
+              <div class="result-item" data-fr="Encadrement d'équipe développeurs : expression des besoins, suivi d'avancement, garantie qualité livrables" data-en="Developer team management: requirements communication, progress tracking, deliverable quality assurance">Encadrement d'équipe développeurs : expression des besoins, suivi d'avancement, garantie qualité livrables</div>
+              <div class="result-item" data-fr="Relation client industriel récurrente (FR/EN), animation réunions, formation utilisateurs" data-en="Recurring industrial client relations (FR/EN), meeting facilitation, user training">Relation client industriel récurrente (FR/EN), animation réunions, formation utilisateurs</div>
               <div class="result-item" data-fr="Automatisation des tests — Gemini AI + AppScript" data-en="Test automation — Gemini AI + AppScript">Automatisation des tests — Gemini AI + AppScript</div>
-              <div class="result-item" data-fr="Formation utilisateurs &amp; animation réunions clients" data-en="User training &amp; client meeting facilitation">Formation utilisateurs &amp; animation réunions clients</div>
             </div>
           </div>
           <div class="featured-col">
@@ -812,10 +767,24 @@ footer {
               <div class="result-item" data-fr="Vallourec : lignes NOK réduites de 40% à 10%" data-en="Vallourec: NOK lines reduced from 40% to 10%">Vallourec : lignes NOK réduites de 40% à 10%</div>
               <div class="result-item" data-fr="EDF : bugs identifiés, corrigés et validés" data-en="EDF: bugs identified, corrected and validated">EDF : bugs identifiés, corrigés et validés</div>
               <div class="result-item" data-fr="SNCF : migration de version réussie" data-en="SNCF: version migration completed successfully">SNCF : migration de version réussie</div>
+              <div class="result-item" data-fr="Pilotage d'un projet en complète autonomie après prise de responsabilités rapide" data-en="Led one project fully autonomously after rapid increase in responsibilities">Pilotage d'un projet en complète autonomie après prise de responsabilités rapide</div>
             </div>
           </div>
         </div>
-        <div class="project-tags" style="margin-top:16px;">
+        <!-- Témoignage tuteur Bassetti -->
+        <div class="recommendation" style="margin-top:32px;padding:24px 28px;background:rgba(139,26,46,.05);border-left:3px solid var(--bordeaux);">
+          <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;line-height:1.6;color:rgba(26,10,15,.85);margin-bottom:14px;" data-fr="« Sarah a su mener à bien ses premières missions avec rigueur et professionnalisme. Je lui ai accordé rapidement des responsabilités sur plusieurs projets, jusqu'à en piloter un en complète autonomie. Elle interagissait plusieurs fois par semaine avec le client industriel, en français et en anglais, et encadrait également les développeurs. »" data-en="«Sarah handled her first missions with rigor and professionalism. I quickly entrusted her with responsibilities on several projects, including one she ran fully autonomously. She interacted with the industrial client several times per week, in both French and English, and also managed the developer team.»">
+            « Sarah a su mener à bien ses premières missions avec rigueur et professionnalisme. Je lui ai accordé rapidement des responsabilités sur plusieurs projets, jusqu'à en piloter un en complète autonomie. Elle interagissait plusieurs fois par semaine avec le client industriel, en français et en anglais, et encadrait également les développeurs. »
+          </p>
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;">
+            <span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--bordeaux);font-weight:600;">— Benjamin Sharpe · Chef de projet, BASSETTI Group</span>
+            <a href="lettre_Recommandation_Bassetti.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--bordeaux);text-decoration:none;border:1px solid rgba(139,26,46,.4);padding:8px 16px;font-weight:500;transition:all .25s;" onmouseover="this.style.background='var(--bordeaux)';this.style.color='var(--ivory)';" onmouseout="this.style.background='transparent';this.style.color='var(--bordeaux)';">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span data-fr="Télécharger la lettre" data-en="Download the letter">Télécharger la lettre</span>
+            </a>
+          </div>
+        </div>
+        <div class="project-tags" style="margin-top:24px;">
           <span class="project-tag">Agile Scrum</span>
           <span class="project-tag">UML/BPMN</span>
           <span class="project-tag">JIRA</span>
@@ -823,6 +792,45 @@ footer {
           <span class="project-tag">Gemini AI</span>
           <span class="project-tag">AppScript</span>
           <span class="project-tag">TEEXMA</span>
+          <span class="project-tag">FR/EN</span>
+        </div>
+      </div>
+
+      <!-- WOODLE LAB · Side Project Product Lead — FEATURED #2 -->
+      <div class="project-card featured reveal">
+        <div class="project-period" data-fr="Septembre 2025 – Présent" data-en="September 2025 – Present">Septembre 2025 – Présent</div>
+        <div class="project-company">WOODLE Lab</div>
+        <div class="project-role" data-fr="Side Project · Product Lead — Woodle Career, SaaS livré en production" data-en="Side Project · Product Lead — Woodle Career, SaaS shipped to production">Side Project · Product Lead — Woodle Career, SaaS livré en production</div>
+        <div class="project-desc" data-fr="Side project conçu et piloté en autonomie en parallèle de mon parcours : un SaaS de pilotage de recherche d'emploi (ATS personnel pour candidats), livré en production sur <a href=&quot;https://career.woodlelab.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>career.woodlelab.com</a>. M'a permis d'apprendre concrètement le cycle produit complet — et surtout à <strong>dialoguer avec des développeurs et à comprendre les arbitrages techniques</strong>, sans coder moi-même." data-en="A side project I designed and led in parallel with my path: a job search management SaaS (personal ATS for job seekers), shipped to production at <a href=&quot;https://career.woodlelab.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>career.woodlelab.com</a>. It taught me the full product cycle hands-on — and most importantly to <strong>work with developers and understand technical trade-offs</strong>, without coding it myself.">
+          Side project conçu et piloté en autonomie en parallèle de mon parcours : un SaaS de pilotage de recherche d'emploi (ATS personnel pour candidats), livré en production sur <a href="https://career.woodlelab.com" target="_blank" rel="noopener">career.woodlelab.com</a>. M'a permis d'apprendre concrètement le cycle produit complet — et surtout à <strong>dialoguer avec des développeurs et à comprendre les arbitrages techniques</strong>, sans coder moi-même.
+        </div>
+        <div class="featured-grid">
+          <div class="featured-col">
+            <h4 data-fr="Compréhension du besoin &amp; décisions produit" data-en="User need &amp; product decisions">Compréhension du besoin &amp; décisions produit</h4>
+            <div class="project-results">
+              <div class="result-item" data-fr="Définition du positionnement (ATS personnel pour candidats) et structuration du produit de bout en bout" data-en="Defined positioning (personal ATS for job seekers) and end-to-end product structuring">Définition du positionnement (ATS personnel pour candidats) et structuration du produit de bout en bout</div>
+              <div class="result-item" data-fr="Modèle freemium (Free / Pro 4,99 €, essai 14 j) — arbitrages valeur perçue, rétention, conversion" data-en="Freemium model (Free / Pro €4.99, 14-day trial) — perceived value, retention, conversion trade-offs">Modèle freemium (Free / Pro 4,99 €, essai 14 j) — arbitrages valeur perçue, rétention, conversion</div>
+              <div class="result-item" data-fr="Roadmap multi-sprints, priorisation continue, validation fonctionnelle des livrables" data-en="Multi-sprint roadmap, continuous prioritization, functional validation of deliverables">Roadmap multi-sprints, priorisation continue, validation fonctionnelle des livrables</div>
+            </div>
+          </div>
+          <div class="featured-col">
+            <h4 data-fr="Coordination développeurs &amp; livraison" data-en="Developer coordination &amp; delivery">Coordination développeurs &amp; livraison</h4>
+            <div class="project-results">
+              <div class="result-item" data-fr="Communication continue avec les développeurs : animation des sprints, retours fonctionnels précis, suivi des livrables" data-en="Continuous communication with developers: sprint facilitation, precise functional feedback, deliverable follow-up">Communication continue avec les développeurs : animation des sprints, retours fonctionnels précis, suivi des livrables</div>
+              <div class="result-item" data-fr="Compréhension des impacts techniques et de l'architecture (authentification, paiement, emails, jobs planifiés) pour décider en connaissance de cause" data-en="Understanding of technical and architectural impacts (auth, payment, emails, scheduled jobs) to make informed decisions">Compréhension des impacts techniques et de l'architecture (authentification, paiement, emails, jobs planifiés) pour décider en connaissance de cause</div>
+              <div class="result-item" data-fr="Produit livré en production : Kanban 11 statuts, Daily Brief, rappels automatisés, dashboard KPI personnalisable, agrégateur d'offres Jooble · Adzuna · France Travail" data-en="Live in production: 11-status Kanban, Daily Brief, automated reminders, customizable KPI dashboard, job aggregator Jooble · Adzuna · France Travail">Produit livré en production : Kanban 11 statuts, Daily Brief, rappels automatisés, dashboard KPI personnalisable, agrégateur d'offres Jooble · Adzuna · France Travail</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-tags" style="margin-top:16px;">
+          <span class="project-tag">Product Management</span>
+          <span class="project-tag" data-fr="Stratégie produit" data-en="Product Strategy">Stratégie produit</span>
+          <span class="project-tag" data-fr="Décisions produit" data-en="Product Decisions">Décisions produit</span>
+          <span class="project-tag" data-fr="Coordination développeurs" data-en="Developer Coordination">Coordination développeurs</span>
+          <span class="project-tag" data-fr="Conception UX" data-en="UX Design">Conception UX</span>
+          <span class="project-tag" data-fr="Roadmap &amp; sprints" data-en="Roadmap &amp; sprints">Roadmap &amp; sprints</span>
+          <span class="project-tag">SaaS Freemium</span>
+          <span class="project-tag">FR/EN</span>
         </div>
       </div>
 
@@ -830,7 +838,7 @@ footer {
       <div class="project-card reveal">
         <div class="project-period">Juillet 2024 – Octobre 2024</div>
         <div class="project-company">PicoInspect</div>
-        <div class="project-role" data-fr="Cheffe de Projet IA & Innovation — Espagne" data-en="AI & Innovation Project Manager — Spain">Cheffe de Projet IA & Innovation — Espagne</div>
+        <div class="project-role" data-fr="Chargée de projet IA &amp; Innovation — Espagne" data-en="AI &amp; Innovation Project Lead — Spain">Chargée de projet IA &amp; Innovation — Espagne</div>
         <div class="project-desc" data-fr="Pilotage d'un projet IA de bout en bout pour le lancement d'un service innovant basé sur la durabilité." data-en="End-to-end management of an AI project for the launch of an innovative sustainability-based service.">
           Pilotage d'un projet IA de bout en bout pour le lancement d'un service innovant basé sur la durabilité.
         </div>
@@ -851,7 +859,7 @@ footer {
       <div class="project-card reveal">
         <div class="project-period">Février 2024 – Juin 2024</div>
         <div class="project-company">CAN-SAT · Istanbul</div>
-        <div class="project-role" data-fr="Cheffe de Projet — Satellite Miniature · USTTL, Turquie" data-en="Project Manager — Miniature Satellite · USTTL, Turkey">Cheffe de Projet — Satellite Miniature · USTTL, Turquie</div>
+        <div class="project-role" data-fr="Coordinatrice projet étudiant — Satellite miniature · USTTL, Turquie" data-en="Student Project Coordinator — Miniature satellite · USTTL, Turkey">Coordinatrice projet étudiant — Satellite miniature · USTTL, Turquie</div>
         <div class="project-desc" data-fr="Le déclic. Coordination d'une équipe de 7 étudiants multidisciplinaires dans un contexte international pour concevoir, programmer et valider un satellite miniature." data-en="The turning point. Coordination of a 7-member multidisciplinary team in an international context to design, program and validate a miniature satellite.">
           Le déclic. Coordination d'une équipe de 7 étudiants multidisciplinaires dans un contexte international pour concevoir, programmer et valider un satellite miniature.
         </div>
@@ -923,14 +931,14 @@ footer {
         </div>
       </div>
       <div class="skill-group">
-        <div class="skill-group-title" data-fr="Conseil & Stratégie" data-en="Consulting & Strategy">Conseil & Stratégie</div>
+        <div class="skill-group-title" data-fr="Méthode &amp; Produit" data-en="Method &amp; Product">Méthode &amp; Produit</div>
         <div class="skill-list">
-          <div class="skill-item">SWOT · Business Model Canvas</div>
-          <div class="skill-item">Porter · Ansoff</div>
-          <div class="skill-item">Unit Economics · CAC · LTV</div>
-          <div class="skill-item">Animation d'ateliers</div>
-          <div class="skill-item">Communication stratégique</div>
-          <div class="skill-item">Formation utilisateurs</div>
+          <div class="skill-item" data-fr="Compréhension du besoin métier" data-en="Business need discovery">Compréhension du besoin métier</div>
+          <div class="skill-item" data-fr="Structuration produit &amp; arbitrages" data-en="Product structuring &amp; trade-offs">Structuration produit &amp; arbitrages</div>
+          <div class="skill-item">Business Model Canvas</div>
+          <div class="skill-item" data-fr="Animation d'ateliers &amp; réunions clients" data-en="Workshop &amp; client meeting facilitation">Animation d'ateliers &amp; réunions clients</div>
+          <div class="skill-item" data-fr="Communication développeurs ↔ métier" data-en="Developer ↔ business communication">Communication développeurs ↔ métier</div>
+          <div class="skill-item" data-fr="Formation utilisateurs" data-en="User training">Formation utilisateurs</div>
         </div>
       </div>
       <div class="skill-group">
@@ -996,9 +1004,9 @@ footer {
         <div class="gold-divider"></div>
         <div class="roles-list">
           <div class="role-item"><span class="role-num">01</span><span data-fr="PMO Junior · Ingénieure Projet" data-en="Junior PMO · Project Engineer">PMO Junior · Ingénieure Projet</span></div>
-          <div class="role-item"><span class="role-num">02</span><span data-fr="Cheffe de Projet Technique" data-en="Technical Project Manager">Cheffe de Projet Technique</span></div>
+          <div class="role-item"><span class="role-num">02</span><span data-fr="Cheffe de Projet Junior · Technique" data-en="Junior Project Manager · Technical">Cheffe de Projet Junior · Technique</span></div>
           <div class="role-item"><span class="role-num">03</span><span data-fr="Business Analyst · MOA Junior" data-en="Business Analyst · Junior MOA">Business Analyst · MOA Junior</span></div>
-          <div class="role-item"><span class="role-num">04</span><span data-fr="Consultante Junior en Transformation" data-en="Junior Transformation Consultant">Consultante Junior en Transformation</span></div>
+          <div class="role-item"><span class="role-num">04</span><span data-fr="Ingénieure Méthodes / Amélioration continue" data-en="Methods Engineer / Continuous Improvement">Ingénieure Méthodes / Amélioration continue</span></div>
         </div>
       </div>
       <div>
