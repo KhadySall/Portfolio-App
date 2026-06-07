@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Khady Sarah SALL — Portfolio</title>
+<meta name="description" content="Khady Sarah SALL — ingénieure Bac+5 (IPSA 2025), PMO et cheffe de projet certifiée AgilePM et SFC. Profil hybride entre projet industriel et produit digital, conceptrice de Woodle Career.">
+<meta name="author" content="Khady Sarah SALL">
+<meta name="theme-color" content="#8B1A2E">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Khady Sarah SALL — Portfolio">
+<meta property="og:description" content="Ingénieure Bac+5 et cheffe de projet (PMO). Profil hybride industrie et produit digital, conceptrice de Woodle Career.">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Khady Sarah SALL — Portfolio">
+<meta name="twitter:description" content="Ingénieure Bac+5 et cheffe de projet (PMO), conceptrice de Woodle Career.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%238B1A2E'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' font-weight='700' fill='%23F7F3EE' text-anchor='middle'%3EKS%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Khady Sarah SALL","jobTitle":"PMO · Cheffe de projet · Ingénieure","alumniOf":{"@type":"CollegeOrUniversity","name":"IPSA Paris"},"email":"khady.sarahlkm@gmail.com","sameAs":["https://www.linkedin.com/in/KhadySarahSall"],"knowsAbout":["Gestion de projet","PMO","Business analysis","Product management","Agile Scrum"],"worksFor":{"@type":"Organization","name":"Woodle Lab"}}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -621,6 +635,13 @@ footer {
 .gold-divider {
   width: 60px; height: 2px; background: var(--bordeaux); margin: 0 0 40px;
 }
+
+/* ─── REDUCED MOTION ─────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
 </style>
 </head>
 <body>
@@ -638,8 +659,8 @@ footer {
   </ul>
   <div style="display:flex;align-items:center;gap:12px;">
     <div class="lang-toggle">
-      <button class="lang-btn active" onclick="setLang('fr')">FR</button>
-      <button class="lang-btn" onclick="setLang('en')">EN</button>
+      <button class="lang-btn active" onclick="setLang('fr')" aria-pressed="true" aria-label="Français">FR</button>
+      <button class="lang-btn" onclick="setLang('en')" aria-pressed="false" aria-label="English">EN</button>
     </div>
     <a href="#contact" class="nav-cta" data-fr="Me contacter" data-en="Contact me">Me contacter</a>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -647,6 +668,8 @@ footer {
     </button>
   </div>
 </nav>
+
+<main>
 
 <!-- ═══ HERO ════════════════════════════════════════════════════════════════ -->
 <section id="hero">
@@ -793,11 +816,12 @@ footer {
       <!-- WOODLE LAB · Product Lead Woodle Career — FEATURED #2 -->
       <div class="project-card featured reveal">
         <div class="project-period" data-fr="Août 2025 – Présent" data-en="August 2025 – Present">Août 2025 – Présent</div>
-        <div class="project-company">WOODLE Lab</div>
+        <div class="project-company"><a href="https://www.woodlelab.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">WOODLE Lab</a></div>
         <div class="project-role" data-fr="Product Lead — Woodle Career, SaaS livré en production" data-en="Product Lead — Woodle Career, SaaS shipped to production">Product Lead — Woodle Career, SaaS livré en production</div>
         <div class="project-desc" data-fr="Conçu et piloté en autonomie : un <strong>ATS côté candidat</strong> livré en production sur <a href=&quot;https://career.woodlelab.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>career.woodlelab.com</a>. Vision produit, conception UX, tests fonctionnels et coordination jusqu'au déploiement — développement réalisé via <strong>Claude Code (Anthropic)</strong>, orchestré en tant que Product Lead." data-en="Designed and led autonomously: a <strong>candidate-side ATS</strong> shipped to production at <a href=&quot;https://career.woodlelab.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>career.woodlelab.com</a>. Product vision, UX design, functional testing and coordination through to deployment — development carried out via <strong>Claude Code (Anthropic)</strong>, orchestrated as Product Lead.">
           Conçu et piloté en autonomie : un <strong>ATS côté candidat</strong> livré en production sur <a href="https://career.woodlelab.com" target="_blank" rel="noopener">career.woodlelab.com</a>. Vision produit, conception UX, tests fonctionnels et coordination jusqu'au déploiement — développement réalisé via <strong>Claude Code (Anthropic)</strong>, orchestré en tant que Product Lead.
         </div>
+        <a href="https://career.woodlelab.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-bottom:24px;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:var(--ivory);background:var(--bordeaux);padding:11px 22px;text-decoration:none;transition:background .25s;" onmouseover="this.style.background='var(--bordeaux2)';" onmouseout="this.style.background='var(--bordeaux)';" data-fr="Découvrir Woodle Career →" data-en="Explore Woodle Career →">Découvrir Woodle Career →</a>
         <div class="featured-grid">
           <div class="featured-col">
             <h4 data-fr="Compréhension du besoin &amp; décisions produit" data-en="User need &amp; product decisions">Compréhension du besoin &amp; décisions produit</h4>
@@ -930,7 +954,7 @@ footer {
           <div class="skill-item">Python · SQL · MATLAB · XML</div>
         </div>
       </div>
-      <div class="skill-group">
+      <div class="skill-group" id="technique" style="scroll-margin-top:90px;">
         <div class="skill-group-title" data-fr="Technique" data-en="Technical">Technique</div>
         <div class="skill-list">
           <div class="skill-item">CATIA V5 · STAR-CCM+</div>
@@ -939,6 +963,7 @@ footer {
           <div class="skill-item">Simulation numérique (CFD)</div>
           <div class="skill-item">Arduino · Systèmes embarqués</div>
           <div class="skill-item">Sciences des matériaux</div>
+          <div class="skill-item"><a href="Portfolio_Calculs_Sarah.pdf" target="_blank" rel="noopener" style="color:var(--bordeaux);text-decoration:underline;text-underline-offset:3px;" data-fr="Portfolio de calculs (PDF)" data-en="Engineering calculations (PDF)">Portfolio de calculs (PDF)</a></div>
         </div>
       </div>
       <div class="skill-group">
@@ -1071,6 +1096,8 @@ footer {
   </div>
 </section>
 
+</main>
+
 <!-- ═══ FOOTER ════════════════════════════════════════════════════════════ -->
 <footer>
   <div class="footer-logo">Khady Sarah SALL</div>
@@ -1084,7 +1111,9 @@ let currentLang = 'fr';
 function setLang(lang) {
   currentLang = lang;
   document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+    const isActive = btn.textContent.toLowerCase() === lang;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
   });
   document.querySelectorAll('[data-fr]').forEach(el => {
     const text = el.getAttribute('data-' + lang);
